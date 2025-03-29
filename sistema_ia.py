@@ -58,14 +58,3 @@ class SistemaTransporte:
 
         return camino, costos[destino]  # Retornamos la mejor ruta y el costo total.
 
-# Ejemplo de uso del sistema:
-sistema = SistemaTransporte()
-punto_A = 'A'  # Estación de inicio.
-punto_B = 'I'  # Estación de destino.
-
-# Llamamos a la función para obtener la mejor ruta y su costo.
-ruta_optima, costo_total = sistema.encontrar_mejor_ruta(punto_A, punto_B)
-
-# Mostramos el resultado en la consola.
-print(f"Mejor ruta de {punto_A} a {punto_B}: {' → '.join(ruta_optima)}")
-print(f"Costo total del viaje: {costo_total} minutos")
